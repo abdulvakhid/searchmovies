@@ -1,0 +1,30 @@
+.card {
+    width: 350px;
+    margin: 0 auto;
+
+}
+
+
+
+.wrape {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+@media only screen and (min-width:992px) {
+
+    .modal-body,
+    .modal-content {
+        width: 100% !important;
+        min-width: 800px !important;
+        margin: 0 auto !important;
+    }
+}
+
+.search{
+    width: 20px;
+    height: 20px;
+top: 29px;
+right: 40px;
+}

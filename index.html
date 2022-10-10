@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/./bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>10-dars Movies</title>
+</head>
+
+<body>
+    <main>
+        <header class="bg-info bg-gradient mb-5">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center py-2">
+                    <div class="">
+                        <a class="text-danger fw-bolder fs-1 text-decoration-none" href="./index.html">
+                            FilmFlix
+                        </a>
+                    </div>
+
+                    <strong class="fw-bolder fs-1 text-white">Movies</strong>
+
+                   
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <form class="d-flex form mx-auto mb-5">
+                    <input class="form-control w-25 input ms-auto me-2" type="search"
+                        placeholder="search film">
+                        <!-- <i class="fa-brands fa-searchengin position-absolute search"></i> -->
+                    <button class="btn btn-primary me-auto" type="submit">Search</button>
+                </form>
+                <ul class="list row list-unstyled">
+                    <div class="d-flex justify-content-center "
+                        style="margin-top: 100px;;padding-bottom:100%;position:relative;"><iframe
+                            src="https://giphy.com/embed/UGQtQ3aAoBGYKs4Hlw" width="300" height="300"
+                            style="position:absolute" frameBorder="0" class="giphy-embed"></iframe></div>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+
+    <template class="template">
+        <li class="col-md-6 col-lg-4 mb-3">
+            <div class="card h-100 d-flex flex-column p-3 rounded-5 shadow-sm">
+                <img class="movie-img img-thumbnail bg-info rounded-4" src="" alt="img">
+                <div class="wrap p-3">
+                    <h4 class="movie-title"></h4>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="fs-6 movie-rank"></span> &nbsp;
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span class="fs-6 movie-year"></span> &nbsp;
+                    <i class="fa-solid fa-clock"></i>
+                    <span class="fs-6 movie-time"></span> &nbsp;
+                    <br><br>
+                    <p class="fs-5 fw-bold movie-category"></p>
+
+                    <a class="btn btn-secondary more-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                        href="#" target="blank"><i class="fa-solid fa-circle-info fs-5"></i>&nbsp;More info</a>
+                </div>
+            </div>
+        </li>
+    </template>
+    <!-- modal  -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body ">
+                    <div class="wraps row d-flex w-100">
+                        <div class="col-lg-6">
+                            <div class="wrapper">
+                                <h2 class="modal-title"></h2>
+                                <iframe class="modal-iframe" width="300" height="220" src="" title=""
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="wrape p-3">
+                                <i class="fa-solid fa-star"></i>
+                                <span class="fs-6 modal-rank"></span> &nbsp;
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <span class="fs-6 modal-year"></span> &nbsp;
+                                <i class="fa-solid fa-clock"></i>
+                                <span class="fs-6 modal-time"></span> &nbsp;
+                                <br><br>
+                                <p class="fs-5 fw-bold modal-category"></p>
+                                <p class="modal-summary"></p>
+                                <a class="btn btn-link text-decoration-none" href="#" target="blank">Show on IMDb &nbsp;
+                                    <!-- <i class="fa-solid fa-right-from-bracket text-info"></i> -->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./movies.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
